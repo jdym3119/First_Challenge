@@ -1,13 +1,15 @@
 def strings(x):
     """
-    The function takes a list of strings as input and returns a list of strings that have the same
-    characters in any order.
-    :param x: The function `strings` takes a list of strings as input and returns a list of strings
-    where each pair of strings have the same set of characters. The code then prompts the user to enter
-    a list of strings, calls the `strings` function with the input list, and prints the result
-    :return: The function `strings(x)` takes a list of strings as input, compares each pair of strings
-    to see if they have the same set of characters, and returns a list of unique strings that have at
-    least one other string with the same set of characters.
+    The function `strings` takes a list of strings as input and returns a list of strings that have the
+    same characters as at least one other string in the input list.
+    
+    :param x: The function `strings(x)` takes a list of strings `x` as input. It compares each pair of
+    strings in the list and returns a new list containing only the strings that have the same set of
+    characters as at least one other string in the original list
+    :return: The function `strings(x)` returns a list of strings from the input list `x` that have the
+    same set of characters as at least one other string in the list. The function iterates through the
+    input list and compares each pair of strings to check if they have the same set of characters. If a
+    match is found, the strings are added to the output list `b`. The function then
     """
     b=[]
     for i in range(len(x)):
