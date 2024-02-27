@@ -13,6 +13,7 @@ def strings(x):
     for i in range(len(x)):
         for j in range(i+1, len(x)):
             if set(x[i])==set(x[j]) and x[j] not in b:
-                b.append(x[i])
+                if x[i] not in b:
+                    b.append(x[i])
                 b.append(x[j])
-    return list(set(b))    
+    return list(b)
