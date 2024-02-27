@@ -16,4 +16,6 @@ def basic_math_operations(x,y,z):
     if z=='+':return x+y
     elif z=='-':return x-y
     elif z=='*':return x*y
-    elif z=='/':return x/y
+    elif z=='/':
+        if y!=0: return x/y
+        else: return "No es posible"
