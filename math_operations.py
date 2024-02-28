@@ -18,4 +18,4 @@ def basic_math_operations(x,y,z):
     elif z=='*':return x*y
     elif z=='/':
         if y!=0: return x/y
-        else: return "No es posible"
+        else: return "It\'s impossible"
